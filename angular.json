@@ -33,9 +33,12 @@
                         "tsConfig": "tsconfig.app.json",
                         "inlineStyleLanguage": "scss",
                         "assets": [{
-                            "glob": "**/*",
-                            "input": "public"
-                        }],
+                                "glob": "**/*",
+                                "input": "public",
+                                "output": "/"
+                            },
+                            "src/assets"
+                        ],
                         "styles": [
                             "node_modules/slick-carousel/slick/slick.css",
                             "node_modules/slick-carousel/slick/slick-theme.css",
@@ -91,9 +94,11 @@
                         "tsConfig": "tsconfig.spec.json",
                         "inlineStyleLanguage": "scss",
                         "assets": [{
-                            "glob": "**/*",
-                            "input": "public"
-                        }],
+                                "glob": "**/*",
+                                "input": "public"
+                            },
+                            "src/assets"
+                        ],
                         "styles": [
                             "src/styles.scss"
                         ],

@@ -10,9 +10,9 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'month-app';
 months = [
-  { name: 'June', images: ['https://picsum.photos/seed/june/400/300'] },
-  { name: 'July', images: ['https://picsum.photos/seed/july/400/300'] },
-  { name: 'August', images: ['https://picsum.photos/seed/aug/400/300'] }
+  { name: 'June', images: ['/assets/1stest.png'] },
+  { name: 'July', images: ['/assets/2ndest.png'] },
+  { name: 'August', images: ['/assets/3rdest.png'] },
 ];
 
   activeIndex = 0;
