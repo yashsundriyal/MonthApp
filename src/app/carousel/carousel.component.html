@@ -1,0 +1,12 @@
+<div class="carousel" (scroll)="onScroll($event)">
+    <div class="slide" *ngFor="let month of months">
+        <div class="card">
+            <h2>{{ month.name }}</h2>
+            <img *ngFor="let img of month.images" [src]="img" />
+        </div>
+    </div>
+</div>
+
+<div class="dots-container">
+    <span *ngFor="let m of months; let i = index" class="dot" [class.active]="i === activeIndex" (click)="setActive(i)"></span>
+</div>
